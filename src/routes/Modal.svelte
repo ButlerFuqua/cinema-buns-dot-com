@@ -1,13 +1,27 @@
 <script>
+    import { fade, blur, fly } from "svelte/transition";
+    import { quintOut } from "svelte/easing";
+    import Close from "./CloseIcon.svelte";
+
     export let isOpen = false;
     export let onClose;
 </script>
 
 {#if isOpen}
-    <div class="modal-overlay" on:click={onClose}>
-        <div class="modal-content" on:click|stopPropagation>
-            <button on:click={onClose}>Close</button>
-            <slot />
+    <div
+        class="modal-overlay"
+        on:click={onClose}
+        transition:blur={{ duration: 300, amount: 8 }}
+    >
+        <div
+            class="modal-content"
+            on:click|stopPropagation
+            transition:fly={{ duration: 400, easing: quintOut, y: -50 }}
+        >
+            <button on:click={onClose}><Close /></button>
+            <div>
+                <slot />
+            </div>
         </div>
     </div>
 {/if}
@@ -29,11 +43,19 @@
     }
 
     .modal-content {
-        background: white;
-        padding: 20px;
+        background: #fefefe;
+        padding: var(--default-padding);
         border-radius: 8px;
-        max-width: 90%;
-        max-height: 90%;
+        width: 500px;
+        max-width: 80%;
+        max-height: 80%;
         overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    button {
+        background: none;
+        border: none;
     }
 </style>
