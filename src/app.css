@@ -18,6 +18,7 @@
 	color: var(--color-text);
 	--site-width: 700px;
 	--default-padding: 1rem;
+	--default-bg: #141414;
 }
 
 html,
@@ -37,10 +38,10 @@ p {
 	line-height: 1.5;
 }
 
-a {
+/* a {
 	color: var(--color-theme-1);
 	text-decoration: none;
-}
+} */
 
 a:hover {
 	text-decoration: underline;

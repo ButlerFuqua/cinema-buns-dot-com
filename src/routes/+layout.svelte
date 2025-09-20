@@ -32,7 +32,7 @@
 	}
 
 	.header {
-		min-height: 40px;
+		min-height: 60px;
 		flex: 1;
 		background-color: coral;
 	}
@@ -44,7 +44,7 @@
 	footer {
 		flex: 1;
 		min-height: 60px;
-		background-color: #141414;
+		background-color: var(--default-bg);
 	}
 
 	footer div {
