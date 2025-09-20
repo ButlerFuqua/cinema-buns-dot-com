@@ -135,5 +135,9 @@
         height: 100%;
         z-index: -1;
         background: var(--default-bg);
+        /* background-image: url("/cops_vs_ninjas_logo.png"); */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 </style>

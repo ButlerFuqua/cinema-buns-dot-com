@@ -25,7 +25,8 @@
 	}
 
 	header a {
-		color: var(--yellow-color);
+		color: #fefefe;
+		background-color: var(--default-bg);
 		text-decoration: none;
 		/* font-family: var(--font-display); */
 		font-family: "Rampart One", sans-serif;
@@ -37,11 +38,13 @@
 		font-weight: 400;
 		font-style: normal;
 		font-variation-settings:
-			"EDPT" 100,
-			"EHLT" 12; */
+		"EDPT" 100,
+		"EHLT" 12; */
 	}
 
 	header a + a {
+		color: var(--yellow-color);
+		background-color: var(--default-bg);
 		text-align: right;
 	}
 </style>

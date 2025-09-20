@@ -8,11 +8,14 @@
 </svelte:head>
 
 <section>
-	<h1>
-		<span id="cops">Cops</span>
-		<span id="vs">Vs</span>
-		<span id="ninjas">Ninjas</span>
-	</h1>
+	<div class="title-container">
+		<!-- <img src="/cops_vs_ninjas_logo.png" alt="Logo" /> -->
+		<h1>
+			<span id="cops">Cops</span>
+			<span id="vs">Vs</span>
+			<span id="ninjas">Ninjas</span>
+		</h1>
+	</div>
 	<div>
 		<h2>
 			A podcast that interviews real-life heroes such as police officers,
@@ -36,6 +39,7 @@
 
 	section div {
 		padding: var(--default-padding);
+		/* background-color: rgba(0, 0, 0, 0.9); */
 	}
 
 	h1 {
@@ -51,7 +55,31 @@
 		white-space: nowrap;
 	}
 
+	h1 span#cops {
+		color: var(--blue-color);
+	}
+	h1 span#vs {
+		color: var(--red-color);
+	}
+	h1 span#ninjas {
+		color: var(--yellow-color);
+	}
+
 	h2 {
 		margin: 0;
 	}
+
+	.title-container {
+		position: relative;
+	}
+	/* .title-container h1 {
+		z-index: 10;
+		position: absolute;
+	}
+	.title-container img {
+		position: absolute;
+		max-width: 100%;
+		z-index: 1;
+		opacity: 0.5;
+	} */
 </style>
