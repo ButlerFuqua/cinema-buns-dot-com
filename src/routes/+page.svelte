@@ -1,7 +1,4 @@
 <script lang="ts">
-	import Counter from './Counter.svelte';
-	import welcome from '$lib/images/svelte-welcome.webp';
-	import welcomeFallback from '$lib/images/svelte-welcome.png';
 </script>
 
 <svelte:head>
@@ -11,21 +8,16 @@
 
 <section>
 	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcomeFallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
+		<span id="cops">Cops</span>
+		<span id="vs">Vs</span>
+		<span id="ninjas">Ninjas</span>
 	</h1>
-
-	<h2>
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
-
-	<Counter />
+	<div>
+		<h2>
+			A podcast that interviews real-life heroes such as police officers,
+			church pastors, mentors, veterans, therapists, nurses, and more.
+		</h2>
+	</div>
 </section>
 
 <style>
@@ -33,27 +25,30 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		flex: 0.6;
+		min-height: 100%;
+		background-color: blue;
+		margin: auto;
+		max-width: var(--site-width);
+	}
+
+	section div {
+		padding: var(--default-padding);
 	}
 
 	h1 {
-		width: 100%;
+		margin: 0;
+		font-family: "Bungee Shade", sans-serif;
+		font-weight: 600;
+		font-style: normal;
+		font-size: clamp(1rem, 20dvw, 9rem);
 	}
 
-	.welcome {
+	h1 span {
 		display: block;
-		position: relative;
-		width: 100%;
-		height: 0;
-		padding: 0 0 calc(100% * 495 / 2048) 0;
+		white-space: nowrap;
 	}
 
-	.welcome img {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		top: 0;
-		display: block;
+	h2 {
+		margin: 0;
 	}
 </style>

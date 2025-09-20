@@ -1,57 +1,54 @@
 <script lang="ts">
-	import Header from './Header.svelte';
-	import '../app.css';
+	import Header from "./Header.svelte";
+	import "../app.css";
+	import PodcastLinks from "./PodcastLinks.svelte";
 
 	let { children } = $props();
 </script>
 
 <div class="app">
-	<Header />
+	<div class="header">
+		<Header />
+	</div>
 
 	<main>
 		{@render children()}
 	</main>
 
 	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
+		<div>
+			<PodcastLinks />
+		</div>
 	</footer>
 </div>
 
 <style>
 	.app {
+		background: blue;
+		height: 100vh;
+		height: 100dvh;
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
 	}
 
-	main {
+	.header {
+		min-height: 40px;
 		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
+		background-color: coral;
 	}
-
+	main {
+		background-color: teal;
+		flex: 11;
+		overflow: auto;
+	}
 	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
+		flex: 1;
+		min-height: 60px;
+		background-color: #141414;
 	}
 
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+	footer div {
+		max-width: var(--site-width);
+		margin: auto;
 	}
 </style>
