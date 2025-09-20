@@ -24,7 +24,7 @@
 
 <style>
 	.app {
-		background: blue;
+		/* background: blue; */
 		height: 100vh;
 		height: 100dvh;
 		display: flex;
@@ -34,10 +34,10 @@
 	.header {
 		min-height: 60px;
 		flex: 1;
-		background-color: coral;
+		/* background-color: coral; */
 	}
 	main {
-		background-color: teal;
+		/* background-color: teal; */
 		flex: 11;
 		overflow: auto;
 	}

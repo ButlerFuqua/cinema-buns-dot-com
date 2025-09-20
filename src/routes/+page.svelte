@@ -1,4 +1,5 @@
 <script lang="ts">
+	import AnimatedBg from "./AnimatedBg.svelte";
 </script>
 
 <svelte:head>
@@ -20,13 +21,15 @@
 	</div>
 </section>
 
+<AnimatedBg />
+
 <style>
 	section {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		min-height: 100%;
-		background-color: blue;
+		/* background-color: blue; */
 		margin: auto;
 		max-width: var(--site-width);
 	}
