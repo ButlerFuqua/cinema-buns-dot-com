@@ -52,7 +52,7 @@
         overflow: auto;
         display: flex;
         flex-direction: column;
-        box-shadow: 2px 3px 3px 4px rgb(33, 33, 224);
+        box-shadow: 2px 3px 3px 4px var(--blue-color);
     }
 
     button {
