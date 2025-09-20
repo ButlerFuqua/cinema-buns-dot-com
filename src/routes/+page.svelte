@@ -37,7 +37,7 @@
 
 	h1 {
 		margin: 0;
-		font-family: "Bungee Shade", sans-serif;
+		font-family: var(--font-display);
 		font-weight: 600;
 		font-style: normal;
 		font-size: clamp(1rem, 20dvw, 9rem);

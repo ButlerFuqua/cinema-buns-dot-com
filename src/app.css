@@ -1,5 +1,8 @@
 @import '@fontsource/fira-mono';
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik+80s+Fade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 
 :root {
 	--font-body:
@@ -19,6 +22,13 @@
 	--site-width: 700px;
 	--default-padding: 1rem;
 	--default-bg: #141414;
+	--font-display: "Bungee Shade", sans-serif;
+	--purple-color: #9615f1;
+	--yellow-color: #eaff2d;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 html,
