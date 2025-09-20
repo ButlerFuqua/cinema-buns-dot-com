@@ -189,7 +189,7 @@
     }
 
     .modal-content div * {
-        width: 60px;
+        width: 70px;
         padding: calc(var(--default-padding) / 2);
     }
 </style>

@@ -43,7 +43,7 @@
     }
 
     .modal-content {
-        background: #fefefe;
+        background: var(--default-bg);
         padding: var(--default-padding);
         border-radius: 8px;
         width: 500px;
@@ -52,6 +52,7 @@
         overflow: auto;
         display: flex;
         flex-direction: column;
+        box-shadow: 2px 3px 3px 4px rgb(33, 33, 224);
     }
 
     button {
