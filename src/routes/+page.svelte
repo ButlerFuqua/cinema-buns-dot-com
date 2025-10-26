@@ -9,17 +9,16 @@
 
 <section>
 	<div class="title-container">
-		<!-- <img src="/cops_vs_ninjas_logo.png" alt="Logo" /> -->
+		<img src="/cops_vs_ninjas_logo.png" alt="Logo" />
 		<h1>
-			<span id="cops">Cops</span>
-			<span id="vs">Vs</span>
-			<span id="ninjas">Ninjas</span>
+			<span id="cops">Cinema</span>
+			<!-- <span id="vs">Vs</span> -->
+			<span id="ninjas">Buns</span>
 		</h1>
 	</div>
 	<div>
 		<h2>
-			A podcast that interviews real-life heroes such as police officers,
-			church pastors, mentors, veterans, therapists, nurses, and more.
+			Explore directors and movies that are worth your time.
 		</h2>
 	</div>
 </section>
@@ -56,13 +55,13 @@
 	}
 
 	h1 span#cops {
-		color: var(--blue-color);
+		color: var(--yellow-color);
 	}
 	h1 span#vs {
 		color: var(--red-color);
 	}
 	h1 span#ninjas {
-		color: var(--yellow-color);
+		color: var(--orange-color);
 	}
 
 	h2 {
@@ -71,15 +70,18 @@
 
 	.title-container {
 		position: relative;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		align-items: center;
 	}
 	/* .title-container h1 {
 		z-index: 10;
 		position: absolute;
 	}
+		*/
 	.title-container img {
-		position: absolute;
+		width: 300px;
 		max-width: 100%;
-		z-index: 1;
-		opacity: 0.5;
-	} */
+	} 
 </style>

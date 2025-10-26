@@ -5,7 +5,7 @@
 </script>
 
 <header>
-	<a href="#">Be a Guest</a>
+	<a href="#">Connect</a>
 	<a href="#">Ask a question</a>
 </header>
 
@@ -25,7 +25,6 @@
 	}
 
 	header a {
-		color: #fefefe;
 		background-color: var(--default-bg);
 		text-decoration: none;
 		/* font-family: var(--font-display); */
@@ -33,6 +32,7 @@
 		font-weight: 00;
 		font-style: normal;
 		font-size: 1.3rem;
+		color: var(--yellow-color);
 		/* font-family: "Nabla", system-ui;
 		font-optical-sizing: auto;
 		font-weight: 400;
@@ -41,9 +41,9 @@
 		"EDPT" 100,
 		"EHLT" 12; */
 	}
-
+	
 	header a + a {
-		color: var(--yellow-color);
+		color: #fefefe;
 		background-color: var(--default-bg);
 		text-align: right;
 	}

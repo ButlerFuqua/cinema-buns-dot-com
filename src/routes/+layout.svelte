@@ -43,7 +43,7 @@
 	}
 	footer {
 		flex: 1;
-		min-height: 60px;
+		min-height: 40px;
 		background-color: var(--default-bg);
 	}
 
