@@ -2,6 +2,7 @@
 	import Header from "./Header.svelte";
 	import "../app.css";
 	import PodcastLinks from "./PodcastLinks.svelte";
+    import ComingSoon from "./ComingSoon.svelte";
 
 	let { children } = $props();
 </script>
@@ -19,6 +20,7 @@
 		<div>
 			<PodcastLinks />
 		</div>
+		<ComingSoon />
 	</footer>
 </div>
 
@@ -45,6 +47,7 @@
 		flex: 1;
 		min-height: 40px;
 		background-color: var(--default-bg);
+		position: relative;
 	}
 
 	footer div {
