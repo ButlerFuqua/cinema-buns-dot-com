@@ -18,15 +18,15 @@
         <div class="modal-content">
             <h2>Hosted by...</h2>
             <div class="hosts-container">
-                <div class="host-blurb">
-					<img src="/cops_vs_ninjas_logo.png" alt="Scott Wood Profile" />
-					<h2>Scott Wood</h2>
+				<div class="host-blurb">
+					<h2 class="scott-font">Scott Wood</h2>
+					<img src="/scott.png" alt="Scott Wood Profile" />
 					<p>Scott Wood is a person. he is the host of the show. That is who is is, and that is what he does, relative to this podcast and website.</p>
 				</div>
                 <div class="host-blurb">
-					<img src="/cops_vs_ninjas_logo.png" alt="Scott Wood Profile" />
-					<h2>Scott Wood</h2>
-					<p>Scott Wood is a person. he is the host of the show. That is who is is, and that is what he does, relative to this podcast and website.</p>
+					<h2 class="butler-font">Butler Fuqua</h2>
+					<img src="/butler.png" alt="Butler Fuqua Profile" />
+					<p>Butler Fuqua is a person. he is the host of the show. That is who is is, and that is what he does, relative to this podcast and website.</p>
 				</div>
             </div>
         </div>

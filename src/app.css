@@ -74,8 +74,15 @@ h1 {
 	max-width: 100%;
 	font-size: 21dvw;
 	margin: 0;
-} */
+	*/ .butler-font {
+			font-family: "Bungee Shade", sans-serif;
+			color: var(--orange-color);
+		}
 
+.scott-font {
+	font-family: "Bungee Shade", sans-serif;
+	color: var(--yellow-color);
+}
 h2 {
 	font-size: 1.5rem;
 }
