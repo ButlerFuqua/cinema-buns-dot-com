@@ -18,7 +18,7 @@
 	</div>
 	<div>
 		<h2>
-			Explore directors and movies that are worth your time.
+			A podcast about movies that's worth your time.
 		</h2>
 	</div>
 </section>
