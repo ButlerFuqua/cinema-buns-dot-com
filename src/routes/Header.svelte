@@ -12,7 +12,7 @@
 <header>
 	<a href="#" on:click={() => showConnectModal = true}>Connect</a>
 	<a href="#" on:click={() => showHostsModal = true}>Hosts</a>
-	<a href="#" >Ask a question</a>
+	<a href="https://forms.gle/vypKCVFP97D6hYt3A" target="_blank">Ask a question</a>
 
 	<Modal isOpen={showHostsModal} onClose={() => (showHostsModal = false)}>
         <div class="modal-content">
