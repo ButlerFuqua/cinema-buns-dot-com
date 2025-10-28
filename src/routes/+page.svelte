@@ -1,15 +1,18 @@
 <script lang="ts">
 	import AnimatedBg from "./AnimatedBg.svelte";
+	import SocialMeta from "$lib/components/SocialMeta.svelte";
 </script>
 
-<svelte:head>
+<!-- <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+</svelte:head> -->
+
+<SocialMeta />
 
 <section>
 	<div class="title-container">
-		<img src="/cops_vs_ninjas_logo.png" alt="Logo" />
+		<img src="/cinema_buns_logo.png" alt="Logo" />
 		<h1>
 			<span id="cops">Cinema</span>
 			<!-- <span id="vs">Vs</span> -->
@@ -17,9 +20,33 @@
 		</h1>
 	</div>
 	<div>
-		<h2>
-			A podcast about movies that's worth your time.
-		</h2>
+		<h2>A podcast about movies that's worth your time.</h2>
+	</div>
+</section>
+
+<section>
+	<div class="host-section">
+		<h2>Hosted by...</h2>
+		<div class="hosts-container">
+			<div class="host-blurb">
+				<h2 class="scott-font">Scott Wood</h2>
+				<img src="/scott.png" alt="Scott Wood Profile" />
+				<p>
+					Scott is a natural storyteller who knows quality when he
+					sees it. You can count on him to share the stories behind
+					the people who made it happen.
+				</p>
+			</div>
+			<div class="host-blurb">
+				<h2 class="butler-font">Butler Fuqua</h2>
+				<img src="/butler.png" alt="Butler Fuqua Profile" />
+				<p>
+					Butler is a self-proclaimed structure nerd with a passion
+					for great dialogue. Expect an insight you didn't see coming
+					that makes you rethink how a scene really works.
+				</p>
+			</div>
+		</div>
 	</div>
 </section>
 
@@ -83,5 +110,17 @@
 	.title-container img {
 		width: 300px;
 		max-width: 100%;
-	} 
+		border-radius: 5px;
+		border: 2px solid #fefefe;
+	}
+
+	.host-container {
+		display: flex;
+	}
+
+	.host-blurb img {
+		width: 400px;
+		max-width: 100%;
+		border-radius: 5px;
+	}
 </style>

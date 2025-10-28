@@ -2,56 +2,79 @@
 	import { page } from "$app/state";
 	import logo from "$lib/images/svelte-logo.svg";
 	import github from "$lib/images/github.svg";
-    import Modal from "./Modal.svelte";
-    import SocialLinks from "./SocialLinks.svelte";
+	import Modal from "./Modal.svelte";
+	import SocialLinks from "./SocialLinks.svelte";
 
 	let showHostsModal = false;
 	let showConnectModal = false;
 </script>
 
 <header>
-	<a href="#" on:click={() => showConnectModal = true}>Connect</a>
-	<a href="#" on:click={() => showHostsModal = true}>Hosts</a>
-	<a href="https://forms.gle/vypKCVFP97D6hYt3A" target="_blank">Ask a question</a>
+	<a href="#" on:click={() => (showConnectModal = true)}>Connect</a>
+	<!-- <a href="#" on:click={() => (showHostsModal = true)}>Hosts</a> -->
+	<a href="https://forms.gle/vypKCVFP97D6hYt3A" target="_blank"
+		>Ask a question</a
+	>
 
 	<Modal isOpen={showHostsModal} onClose={() => (showHostsModal = false)}>
-        <div class="modal-content">
-            <h2>Hosted by...</h2>
-            <div class="hosts-container">
+		<div class="modal-content">
+			<h2>Hosted by...</h2>
+			<div class="hosts-container">
 				<div class="host-blurb">
 					<h2 class="scott-font">Scott Wood</h2>
 					<img src="/scott.png" alt="Scott Wood Profile" />
-					<p>Scott Wood is a person. he is the host of the show. That is who is is, and that is what he does, relative to this podcast and website.</p>
+					<p>
+						<b><em>Scott</em></b> is a natural storyteller who knows
+						quality when he sees it. You can count on him to share the
+						stories behind the people who made it happen.
+					</p>
 				</div>
-                <div class="host-blurb">
+				<div class="host-blurb">
 					<h2 class="butler-font">Butler Fuqua</h2>
 					<img src="/butler.png" alt="Butler Fuqua Profile" />
-					<p>Butler Fuqua is a person. he is the host of the show. That is who is is, and that is what he does, relative to this podcast and website.</p>
+					<p>
+						<b><em>Butler</em></b> is a self-proclaimed structure nerd
+						with a passion for great dialogue. Expect an insight you
+						didn't see coming that makes you rethink how a scene really
+						works.
+					</p>
 				</div>
-            </div>
-        </div>
-    </Modal>
+			</div>
+		</div>
+	</Modal>
 	<Modal isOpen={showConnectModal} onClose={() => (showConnectModal = false)}>
 		<br />
 
-		<div style="display: flex; justify-content:center; align-items:center; flex-direction:column">
+		<div
+			style="display: flex; justify-content:center; align-items:center; flex-direction:column"
+		>
 			<h2>Join our mailing list!</h2>
-		<p>We won't share your email or annoy you.</p>
+			<p>We won't share your email or annoy you.</p>
 		</div>
 
-		<div style="display: flex; justify-content:center; align-items:center; flex-direction:column">
-
+		<div
+			style="display: flex; justify-content:center; align-items:center; flex-direction:column"
+		>
 			<!-- EMAIL SUBSCRIBE FORM HERE -->
-		 <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script><iframe src="https://subscribe-forms.beehiiv.com/ae428906-d088-4220-8bb8-8d7490e11b2d" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width: 560px; height: 206px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"></iframe>
-	<!-- EMAIL SUBSCRIBE FORM HERE -->
-
+			<script
+				async
+				src="https://subscribe-forms.beehiiv.com/embed.js"
+			></script><iframe
+				src="https://subscribe-forms.beehiiv.com/ae428906-d088-4220-8bb8-8d7490e11b2d"
+				class="beehiiv-embed"
+				data-test-id="beehiiv-embed"
+				frameborder="0"
+				scrolling="no"
+				style="width: 560px; height: 206px; margin: 0; border-radius: 0px 0px 0px 0px !important; background-color: transparent; box-shadow: 0 0 #0000; max-width: 100%;"
+			></iframe>
+			<!-- EMAIL SUBSCRIBE FORM HERE -->
 		</div>
-        <div class="modal-content">
-            <h2 style="text-align: center;">Follow Cinema Buns on...</h2>
+		<div class="modal-content">
+			<h2 style="text-align: center;">Follow Cinema Buns on...</h2>
 			<br />
-            <SocialLinks />
-        </div>
-    </Modal>
+			<SocialLinks />
+		</div>
+	</Modal>
 </header>
 
 <style>
@@ -86,14 +109,14 @@
 		"EDPT" 100,
 		"EHLT" 12; */
 	}
-	
+
 	header a + a {
 		color: #fefefe;
 		background-color: var(--default-bg);
 		text-align: right;
 	}
 
-	.hosts-container{
+	.hosts-container {
 		display: flex;
 		flex-direction: column;
 	}
