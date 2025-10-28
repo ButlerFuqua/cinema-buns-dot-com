@@ -1,14 +1,16 @@
 // SEO and Social Sharing Constants
 export const SITE_URL = 'https://cinemabuns.com'; // Replace with your actual domain
 
+const description = `A podcast about movies that's worth your time. Join us for season one!`;
+
 // Page-specific content
 export const PAGE_TITLE = 'Cinema Buns - Season 1';
-export const PAGE_DESCRIPTION = `A podcast about movies that's worth your time.`;
+export const PAGE_DESCRIPTION = description;
 export const PAGE_KEYWORDS = 'movies, film reviews, cinema, movie analysis, film criticism';
 
 // Social specific
 export const SOCIAL_TITLE = 'Cinema Buns - Season 1';
-export const SOCIAL_DESCRIPTION = `A podcast about movies that's worth your time.`;
+export const SOCIAL_DESCRIPTION = description;
 export const SOCIAL_IMAGE = '/cinema_buns_thumbnail.png'; // Path from static folder
 export const SOCIAL_IMAGE_ALT = 'Cinema Buns - Season 1';
 
