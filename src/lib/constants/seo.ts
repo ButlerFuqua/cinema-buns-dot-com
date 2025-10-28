@@ -1,5 +1,5 @@
 // SEO and Social Sharing Constants
-export const SITE_URL = 'https://yourdomain.com'; // Replace with your actual domain
+export const SITE_URL = 'https://cinemabuns.com'; // Replace with your actual domain
 
 // Page-specific content
 export const PAGE_TITLE = 'Cinema Buns - Season 1';
